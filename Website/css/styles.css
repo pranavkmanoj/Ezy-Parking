@@ -171,7 +171,7 @@ body{
 }
 
 .card {
-    transition: all 0.3s;
+    transition: all 0.1s;
 }
 
 
@@ -442,3 +442,22 @@ body{
 
 
 /* end of min-width 1200px */
+
+
+
+@keyframes scale-a-lil {
+    from {
+      scale: .5;
+    }
+  }
+    
+  @media (prefers-reduced-motion: no-preference) {
+    #block,#FAQ {
+      animation: scale-a-lil linear both;
+      animation-timeline: view();
+      animation-range: 25vh 75vh;
+    }
+  }
+
+
+  
